@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Forms Review</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <br>
+      <form action="submission.html" method="POST">
+				<h1>Create a burger!</h1>
+        <section class="protein">
+          <label for="patty"<strong>What type of protein would you like?</strong></label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <br>
+        
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <br>
+        
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Well-Done</span>
+        </section>
+        <br>
+        
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Lettuce</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Onion</label>
+        </section>
+        <br>
+        
+        <section class="cheesy">
+          <span>Would you like to add cheese?</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="cheese" id="no" value="yes">
+          <label for="no">No</label>
+        </section>
+        <br>
+       
+        <!-- <section class="bun-type">
+          <label for="bun">What type of bun would you like?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Sesame</option>
+            <option value="potatoe">Potato</option>
+            <option value="pretzel">Pretzel</option>
+          </select>
+        </section>
+        <br> -->
+        
+        <section>
+        <label for="fav">Select your favourite football team</label>
+          <select name="fav" id="fav">
+            <option value="Arsenal">Arsenal</option>
+            <option value="Tottenham">Tottenham</option>
+            <option value="Chelsea">Chelsea</option>
+            <option value="Liverpool">Liverpool</option>
+            <option value="Man United">Man United</option>
+          </select>
+        </section>
+        
+        <!-- <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section> -->
+
+        <section>
+          <label for="bball">Who's your favourite basketball team?</label>
+            <input type="text" name="bball" id="bball" list="teams">
+              <datalist id="teams">
+                <option value="Lakers"></option>
+                <option value="Warriors"></option>
+                <option value="Dallas"></option>
+                <option value="Knicks"></option>
+              </datalist>
+        </section>
+
+        <br>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <br>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
